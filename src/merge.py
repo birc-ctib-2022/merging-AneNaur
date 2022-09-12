@@ -16,17 +16,17 @@ def merge(x,y): #x: list[int], y: list[int]) -> list[int]:
     # FIXME: fill out the loop so you merge the lists
     # until one of them is empty
     while i < len(x) and j < len(y):
-        if x[i] != y[j]:
+    #    if x[i] != y[j]:
             if x[i] < y[j]:
                 z.append(x[i])
                 i+=1
             else:
                 z.append(y[j])
                 j+=1
-        else:
-            z.append(x[i])
-            i+=1
-            j+=1
+    #    else:
+    #        z.append(x[i])
+    #        i+=1
+    #        j+=1
     if i == len(x):
         z=z+y[j:]
     elif j == len(y):
