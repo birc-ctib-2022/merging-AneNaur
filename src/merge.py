@@ -27,15 +27,16 @@ def merge(x,y): #x: list[int], y: list[int]) -> list[int]:
     #        z.append(x[i])
     #        i+=1
     #        j+=1
-    if i == len(x):
-        z=z+y[j:]
-    elif j == len(y):
-        z=z+x[i:]
+    z.extend(x[i:] or y[j:])
+    #if i == len(x):
+    #    z=z+y[j:]
+    #elif j == len(y):
+    #    z=z+x[i:]
         #break  # FIXME: you shouldn't just break here
     # At least one of the lists is empty now. Copy the
     # remainder of the other into z.
     return z
 
-#a=[0,2,3,4,6,8,10,11]
-#b=[1,5,6,7,9,10,11,12,13]
-#print(merge(a,b))
+a=[0,2,3,4,6,8,10,11]
+b=[1,5,6,7,9,10,11,12,13]
+print(merge(a,b))
