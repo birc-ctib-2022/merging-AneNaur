@@ -1,7 +1,7 @@
 """Code for merging two sorted lists."""
 
 
-def merge(x,y):#x: list[int], y: list[int]) -> list[int]:
+def merge(x: list[int], y: list[int]) -> list[int]:
     """
     Merge two sorted lists.
 
